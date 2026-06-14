@@ -416,10 +416,10 @@
     .hero-core,.hero-bloom{width:90vw;height:90vw}
     .ring.r2{inset:60px}.ring.r3{inset:130px}
     .hero {
-      min-height:75vh;
+      min-height:80vh;
       padding-right: 20px;
       padding-left: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
     }
     .scroll-hint {
       display:none;
