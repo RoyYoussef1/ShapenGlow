@@ -1358,7 +1358,7 @@ a.btn.btn-primary.nav-cta {
   }
   .svc-grid {
     position: relative;
-    display: flex;
+    display: none;
     grid-template-columns: none;
     gap: 16px;
     margin: 48px -28px 0;
