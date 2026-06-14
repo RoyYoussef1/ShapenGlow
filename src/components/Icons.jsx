@@ -1,5 +1,3 @@
-// Inline SVG icons. Stroke icons inherit `currentColor`.
-
 export const ServiceIcon = ({ name }) => {
   switch (name) {
     case "ems":
@@ -80,7 +78,6 @@ export const StepIcon = ({ name }) => {
   }
 };
 
-// Brand wordmark figure mark (used only where the photo logo is not suitable)
 export const ValueIcon = ({ name }) => {
   switch (name) {
     case "care":

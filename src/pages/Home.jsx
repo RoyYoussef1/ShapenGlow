@@ -25,7 +25,6 @@ export default function Home() {
 
   return (
     <div className="page active">
-      {/* HERO */}
       <section className="hero">
         <div className="hero-bloom" aria-hidden="true">
           <div className="hero-core" />
@@ -60,7 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MODALITY STRIP */}
       <div className="strip" aria-hidden="true">
         <div className="strip-track">
           {[...modalities, ...modalities].map((m, i) => (
@@ -72,7 +70,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* METHOD */}
       <section className="section-pad">
         <div className="wrap">
           <div className="head reveal">
@@ -109,7 +106,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES PREVIEW */}
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="head reveal">
@@ -129,7 +125,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* OFFER */}
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="wrap reveal">
           <div className="offer">
@@ -162,7 +157,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROCESS */}
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="head reveal">
@@ -184,7 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="wrap reveal">
           <div className="cta-band">

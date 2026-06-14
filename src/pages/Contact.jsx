@@ -34,7 +34,6 @@ export default function Contact() {
     e.preventDefault();
     setAttempted(true);
     if (!form.name.trim() || !form.phone.trim()) return;
-    // No backend yet — see README for wiring this to email / WhatsApp.
     setSent(true);
     setForm({ name: "", phone: "", service: SERVICE_OPTIONS[0], message: "" });
     setAttempted(false);

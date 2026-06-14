@@ -21,10 +21,8 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // close menu on route change
   useEffect(() => setOpen(false), [location.pathname]);
 
-  // sync body class for the CSS-driven mobile menu styles
   useEffect(() => {
     document.body.classList.toggle("menu-open", open);
     return () => document.body.classList.remove("menu-open");

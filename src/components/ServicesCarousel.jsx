@@ -9,7 +9,6 @@ export default function ServicesCarousel() {
   const [active, setActive] = useState(0);
   const items = services.slice(0, 6);
 
-  // track viewport <=680px
   useEffect(() => {
     const mq = window.matchMedia("(max-width:680px)");
     const apply = () => setIsMobile(mq.matches);
@@ -19,7 +18,6 @@ export default function ServicesCarousel() {
       mq.removeEventListener ? mq.removeEventListener("change", apply) : mq.removeListener(apply);
   }, []);
 
-  // sync active dot with scroll position (mobile only)
   useEffect(() => {
     if (!isMobile) return;
     const track = trackRef.current;
