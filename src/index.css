@@ -377,7 +377,13 @@
   }
   @media(max-width:680px){
     body{font-size:16px}
-    .section-pad{padding:84px 0}
+    .svc-detail .item {
+      padding:30px;
+    }
+    .pkg {
+      padding:30px;
+    }
+    .section-pad{padding:64px 0}
     .nav-links{
       position:fixed;inset:78px 0 auto 0;background:rgba(6,15,20,.97);backdrop-filter:blur(16px);
       flex-direction:column;align-items:stretch;gap:0;padding:20px;border-bottom:1px solid var(--line);
@@ -410,9 +416,10 @@
     .hero-core,.hero-bloom{width:90vw;height:90vw}
     .ring.r2{inset:60px}.ring.r3{inset:130px}
     .hero {
-      min-height:60vh;
+      min-height:65vh;
       padding-right: 20px;
       padding-left: 20px;
+      padding-bottom: 40px;
     }
     .scroll-hint {
       display:none;

@@ -50,7 +50,7 @@ export default function About() {
               A center for recovery <em style={{ fontFamily: "var(--display)" }}>and</em> radiance
             </h2>
             <p style={{ color: "var(--muted)", marginBottom: "18px" }}>
-              We opened our doors to bridge two worlds that too often stay separate — the clinic and the
+              We opened our doors to bridge two worlds that too often stay separate the clinic and the
               spa. On one side, real physiotherapy and intelligent EMS training that rebuild strength and
               relieve pain. On the other, advanced sculpting treatments that refine and renew.
             </p>

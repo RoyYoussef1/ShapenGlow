@@ -131,7 +131,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4>Call or WhatsApp</h4>
-                  <a href="tel:+9610000000">+961 — your number</a>
+                  <a href="tel:+96176348117">+961 76 348 117</a>
                 </div>
               </div>
               <div className="ccard">

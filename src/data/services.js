@@ -37,5 +37,5 @@ export const services = [
   },
 ];
 
-export const MAPS_URL = "https://maps.app.goo.gl/u7GvhsfitoFjcSGF6";
+export const MAPS_URL = "https://maps.app.goo.gl/MMzdHFuYyb2DyqES8";
 export const INSTAGRAM_URL = "https://www.instagram.com/shapenglow.lb/";

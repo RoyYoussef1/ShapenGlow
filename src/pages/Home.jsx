@@ -42,7 +42,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="lead">
-            Your all-in-one destination for recovery and beauty — where clinical physiotherapy meets
+            Your all-in-one destination for recovery and beauty where clinical physiotherapy meets
             advanced body sculpting, all under one luminous roof.
           </p>
           <div className="hero-actions">
@@ -79,7 +79,7 @@ export default function Home() {
             <span className="eyebrow">The Shape N Glow method</span>
             <h2>Two sides of one transformation</h2>
             <p>
-              We treat the body as a whole — restoring how it moves and refining how it looks. Science
+              We treat the body as a whole restoring how it moves and refining how it looks. Science
               and beauty, working together.
             </p>
           </div>
@@ -101,8 +101,7 @@ export default function Home() {
                 <span className="tag">Glow</span>
                 <h3>Sculpting &amp; body contouring</h3>
                 <p>
-                  Maderotherapy, pressotherapy and contouring treatments that smooth, firm and refine —
-                  helping you feel as confident on the outside as you do strong within.
+                  Maderotherapy, pressotherapy and contouring treatments that smooth, firm and refine helping you feel as confident on the outside as you do strong within.
                 </p>
               </div>
             </div>
@@ -117,7 +116,7 @@ export default function Home() {
             <span className="eyebrow">What we do</span>
             <h2>Treatments designed around you</h2>
             <p>
-              Six core services, combined into plans that match your goals — from recovery to full body
+              Six core services, combined into plans that match your goals from recovery to full body
               transformation.
             </p>
           </div>
@@ -140,7 +139,7 @@ export default function Home() {
               <h2>Your summer body is one decision away</h2>
               <p>
                 Combine the power of EMS training with the contouring effect of Maderotherapy in one
-                results-driven package — for a limited time only.
+                results-driven package for a limited time only.
               </p>
               <div style={{ marginTop: "30px" }}>
                 <Link className="btn btn-primary" to="/contact">

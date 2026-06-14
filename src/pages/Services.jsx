@@ -15,7 +15,7 @@ const packages = [
   },
   {
     name: "Summer Body Combo",
-    desc: "4 EMS + 4 Maderotherapy sessions — recovery and contouring in one.",
+    desc: "4 EMS + 4 Maderotherapy sessions recovery and contouring in one.",
     now: "$140",
     was: "$220",
     save: "Save $80 + 10 free pressotherapy sessions",
@@ -25,7 +25,7 @@ const packages = [
   },
   {
     name: "Custom Plan",
-    desc: "Built around your assessment — physiotherapy, EMS, sculpting and more.",
+    desc: "Built around your assessment: Physiotherapy, EMS, sculpting and more.",
     now: "Tailored",
     was: null,
     save: "Priced after your free consultation",
