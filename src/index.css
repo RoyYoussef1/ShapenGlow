@@ -1358,10 +1358,10 @@ a.btn.btn-primary.nav-cta {
   }
   .svc-grid {
     position: relative;
-    display: none;
+    display: flex;
     grid-template-columns: none;
     gap: 16px;
-    margin: 48px -28px 0;
+    margin: 48px 0 0;
     padding: 6px 28px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
