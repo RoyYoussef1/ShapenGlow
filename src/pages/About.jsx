@@ -56,7 +56,7 @@ export default function About() {
             </p>
             <p style={{ color: "var(--muted)" }}>
               Every plan is personal, every session is guided, and every result is built to last. No
-              shortcuts, no empty promises — just care, technology and a team that's genuinely invested
+              shortcuts, no empty promises - just care, technology and a team that's genuinely invested
               in how you feel.
             </p>
           </div>

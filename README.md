@@ -1,4 +1,4 @@
-# Shape N Glow — Website
+# Shape N Glow - Website
 
 Marketing site for **Shape N Glow**, a physiotherapy & wellness center in Lebanon.
 Built with **React + Vite** and **React Router**. Same design as the original mockup
@@ -12,11 +12,11 @@ npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually http://localhost:5173).
+Open the URL Vite prints: http://localhost:5173.
 
 ```bash
-npm run build     # production build to /dist
-npm run preview   # preview the production build
+npm run build
+npm run preview
 ```
 
 ## Push to GitHub
@@ -54,16 +54,3 @@ src/
   data/           services list + shared links
   index.css       all styles (global)
 ```
-
-## Things to update before going live
-
-- **Phone number** in `src/pages/Contact.jsx` (currently a placeholder).
-- **Email** in `src/pages/Contact.jsx` (`hello@shapenglow.lb`).
-- **Contact form** has no backend yet — it shows a success message but doesn't send.
-  Wire it to one of:
-  - a WhatsApp link (`https://wa.me/<number>?text=...`),
-  - an email service like [Formspree](https://formspree.io) or [Web3Forms](https://web3forms.com),
-  - or a Vercel serverless function.
-- Replace the **placeholder testimonials/content** with real copy as needed.
-- Swap in additional **real photos** where helpful (Services page, etc.).
-- The **Google Maps link** points to the location from the Instagram bio — confirm it's correct.

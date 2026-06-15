@@ -9,7 +9,7 @@ const SERVICE_OPTIONS = [
   "Cellulite & Fat Reduction",
   "Pressotherapy",
   "Physical Therapy",
-  "Not sure yet — recommend something",
+  "Other",
 ];
 
 export default function Contact() {
