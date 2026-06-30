@@ -12,6 +12,9 @@ const SERVICE_OPTIONS = [
   "Other",
 ];
 
+const BOOKING_URL =
+  "https://shapenglow6frq.setmore.com?utm_source=in-app&utm_medium=iosapp&utm_campaign=settsharebp";
+
 export default function Contact() {
   useScrollReveal();
 
@@ -23,6 +26,7 @@ export default function Contact() {
   });
   const [attempted, setAttempted] = useState(false);
   const [sent, setSent] = useState(false);
+  const [bookingLoaded, setBookingLoaded] = useState(false);
 
   const update = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
 
@@ -51,6 +55,55 @@ export default function Contact() {
             <span className="glow-word">glow</span> up.
           </h1>
           <p className="lead">Book a session or ask us anything. We usually reply within a few hours.</p>
+        </div>
+      </section>
+
+      {/* Instant online booking */}
+      <section className="section-pad" style={{ paddingBottom: "10px" }}>
+        <div className="wrap reveal">
+          <div className="booking-card">
+            <div className="booking-card-head">
+              <div>
+                <span className="eyebrow">Skip the back-and-forth</span>
+                <h2 style={{ margin: "6px 0 4px" }}>Book your session instantly</h2>
+                <p className="lead" style={{ margin: 0 }}>
+                  Pick a service, choose a time, done. Confirmed straight to your inbox.
+                </p>
+              </div>
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Open full booking page <span className="arr">→</span>
+              </a>
+            </div>
+
+            <div className="booking-frame-wrap">
+              {!bookingLoaded && (
+                <div className="booking-frame-loading">
+                  <div className="spinner" aria-hidden="true" />
+                  <span>Loading availability…</span>
+                </div>
+              )}
+              <iframe
+                src={BOOKING_URL}
+                title="Book an appointment with ShapenGlow"
+                width="100%"
+                height="800"
+                frameBorder="0"
+                scrolling="yes"
+                allow="web-share; payment"
+                onLoad={() => setBookingLoaded(true)}
+                style={{
+                  opacity: bookingLoaded ? 1 : 0,
+                  transition: "opacity 0.4s ease",
+                  display: "block",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
