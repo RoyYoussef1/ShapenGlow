@@ -59,7 +59,7 @@ export default function Contact() {
       </section>
 
       {/* Instant online booking */}
-      <section className="section-pad" style={{ paddingBottom: "10px" }}>
+      <section className="setmore-sec">
         <div className="wrap reveal">
           <div className="booking-card">
             <div className="booking-card-head">

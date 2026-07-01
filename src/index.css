@@ -1310,6 +1310,9 @@ a.btn.btn-primary.nav-cta {
   body {
     font-size: 16px;
   }
+  .page-hero {
+    padding: 100px 0 50px;
+  }
   .svc-detail .item {
     padding: 30px;
   }
@@ -1451,10 +1454,13 @@ a.btn.btn-primary.nav-cta {
   }
 }
 
+.setmore-sec {
+  padding:12px 0 24px;
+}
+
 .booking-card {
-  background: var(--card-bg, #fff);
   border-radius: 20px;
-  padding: 28px;
+  padding: 0;
   box-shadow: 0 6px 30px rgba(0,0,0,0.06);
 }
 
