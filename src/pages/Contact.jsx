@@ -183,7 +183,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4>Call or WhatsApp</h4>
-                  <a href="tel:+96176348117">+961 76 348 117</a>
+                  <a href="https://wa.me/96181588171" target="_blank" rel="noopener noreferrer">+961 81 588 171</a>
                 </div>
               </div>
               <div className="ccard">
@@ -226,14 +226,16 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="map-card">
-              <div className="pin">
-                <div className="dot" />
-                <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
-                  Find us on the map →
-                </a>
-              </div>
+        <div className="wrap map-standalone reveal">
+          <div className="map-card">
+            <div className="pin">
+              <div className="dot" />
+              <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
+                Find us on the map →
+              </a>
             </div>
           </div>
         </div>

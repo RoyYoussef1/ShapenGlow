@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+import { MAPS_URL, INSTAGRAM_URL } from "../data/services";
 
 const links = [
   { to: "/", label: "Home" },
@@ -46,19 +47,53 @@ export default function Nav() {
               {l.label}
             </NavLink>
           ))}
-          <Link className="btn btn-primary nav-cta" to="/contact">
+          <Link className="btn btn-primary nav-cta nav-cta-mobile" to="/contact">
             Book a session <span className="arr">→</span>
           </Link>
         </nav>
 
-        <button
-          className="menu-btn"
-          aria-label="Toggle menu"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span></span>
-        </button>
+        <div className="nav-end">
+          <div className="nav-actions">
+            <a
+              className="nav-social"
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              className="nav-social"
+              href={MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Location"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </a>
+            <span className="nav-divider" aria-hidden="true" />
+            <Link className="btn btn-primary nav-cta" to="/contact">
+              Book a session <span className="arr">→</span>
+            </Link>
+          </div>
+
+          <button
+            className="menu-btn"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
   );
