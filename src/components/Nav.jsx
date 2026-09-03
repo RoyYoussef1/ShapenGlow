@@ -48,7 +48,7 @@ export default function Nav() {
             </NavLink>
           ))}
           <Link className="btn btn-primary nav-cta nav-cta-mobile" to="/contact">
-            Book a session <span className="arr">→</span>
+            Book a session
           </Link>
         </nav>
 
@@ -81,7 +81,7 @@ export default function Nav() {
             </a>
             <span className="nav-divider" aria-hidden="true" />
             <Link className="btn btn-primary nav-cta" to="/contact">
-              Book a session <span className="arr">→</span>
+              Book a session
             </Link>
           </div>
 

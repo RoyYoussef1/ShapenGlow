@@ -12,7 +12,7 @@ export default function Footer() {
               <img className="logo-badge" src={logo} alt="Shape N Glow logo" />
             </Link>
             <p style={{ color: "var(--muted)" }}>
-              Your all-in-one destination for recovery &amp; beauty. Physiotherapy &amp; wellness, Lebanon.
+              Your all-in-one destination for recovery &amp; beauty.
             </p>
           </div>
 

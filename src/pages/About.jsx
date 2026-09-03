@@ -102,7 +102,7 @@ export default function About() {
             <p>Book a visit, meet the team, and feel the difference for yourself.</p>
             <div className="hero-actions" style={{ justifyContent: "center" }}>
               <Link className="btn btn-primary" to="/contact">
-                Book a visit <span className="arr">→</span>
+                Book a visit
               </Link>
             </div>
           </div>

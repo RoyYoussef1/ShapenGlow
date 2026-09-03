@@ -54,11 +54,10 @@ export default function Contact() {
             <br />
             <span className="glow-word">glow</span> up.
           </h1>
-          <p className="lead">Book a session or ask us anything. We usually reply within a few hours.</p>
+          <p className="lead">Book a session or ask us anything.</p>
         </div>
       </section>
 
-      {/* Instant online booking */}
       <section className="setmore-sec">
         <div className="wrap reveal">
           <div className="booking-card">
@@ -76,7 +75,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Open full booking page <span className="arr">→</span>
+                Open full booking page
               </a>
             </div>
 
@@ -151,7 +150,7 @@ export default function Contact() {
                 />
               </div>
               <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }}>
-                Send request <span className="arr">→</span>
+                Send request
               </button>
               <div className={`form-msg${sent ? " show" : ""}`}>
                 Thanks! Your request has been noted. We'll be in touch shortly to confirm your session. ✦
@@ -171,7 +170,7 @@ export default function Contact() {
                 <div>
                   <h4>Visit us</h4>
                   <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
-                    Open location in Google Maps →
+                    Open location in Google Maps
                   </a>
                 </div>
               </div>
@@ -184,18 +183,6 @@ export default function Contact() {
                 <div>
                   <h4>Call or WhatsApp</h4>
                   <a href="https://wa.me/96181588171" target="_blank" rel="noopener noreferrer">+961 81 588 171</a>
-                </div>
-              </div>
-              <div className="ccard">
-                <div className="ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <path d="M22 7l-10 6L2 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4>Email</h4>
-                  <a href="mailto:hello@shapenglow.lb">hello@shapenglow.lb</a>
                 </div>
               </div>
               <div className="ccard">
@@ -225,17 +212,6 @@ export default function Contact() {
                   <p>Mon–Sat · by appointment</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="wrap map-standalone reveal">
-          <div className="map-card">
-            <div className="pin">
-              <div className="dot" />
-              <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
-                Find us on the map →
-              </a>
             </div>
           </div>
         </div>

@@ -5,12 +5,12 @@ import { ServiceIcon } from "../components/Icons";
 
 const packages = [
   {
-    name: "Maderotherapy Course",
+    name: "Maderotherapy Offer",
     desc: "10 sculpting Maderotherapy sessions for smoother, firmer skin.",
     now: "$250",
     was: "$350",
     save: "Save $100",
-    cta: "Book",
+    cta: "Book Now",
     primary: false,
   },
   {
@@ -19,7 +19,7 @@ const packages = [
     now: "$140",
     was: "$220",
     save: "Save $80 + 10 free pressotherapy sessions",
-    cta: "Claim offer",
+    cta: "Book Now",
     primary: true,
     ribbon: "Best value",
   },
@@ -29,7 +29,7 @@ const packages = [
     now: "Tailored",
     was: null,
     save: "Priced after your free consultation",
-    cta: "Enquire",
+    cta: "Book Now",
     primary: false,
   },
 ];
@@ -43,11 +43,11 @@ export default function Services() {
         <div className="b" aria-hidden="true" />
         <div className="wrap">
           <span className="eyebrow">Our services</span>
-          <h1>
+          {/* <h1>
             Recovery &amp; beauty,
             <br />
             <span className="glow-word">refined</span>.
-          </h1>
+          </h1> */}
           <p className="lead">
             Every treatment is delivered by trained therapists and tailored to your goals. Mix and
             match, or follow a guided plan.
@@ -77,9 +77,7 @@ export default function Services() {
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="head center reveal">
-            <span className="eyebrow center">Packages &amp; pricing</span>
-            <h2>Bundles that go further</h2>
-            <p>Save more when you commit to a plan. All prices in USD.</p>
+            <h2>Packages &amp; pricing</h2>
           </div>
           <div className="pkgs">
             {packages.map((p) => (
@@ -113,7 +111,7 @@ export default function Services() {
             <p>Tell us your goal and we'll recommend the right treatment plan for you.</p>
             <div className="hero-actions" style={{ justifyContent: "center" }}>
               <Link className="btn btn-primary" to="/contact">
-                Get a recommendation <span className="arr">→</span>
+                Get a recommendation
               </Link>
             </div>
           </div>

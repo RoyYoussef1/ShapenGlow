@@ -41,12 +41,11 @@ export default function Home() {
             </span>
           </h1>
           <p className="lead">
-            Your all-in-one destination for recovery and beauty where clinical physiotherapy meets
-            advanced body sculpting, all under one luminous roof.
+            Your all-in-one destination for recovery and beauty.
           </p>
           <div className="hero-actions">
             <Link className="btn btn-primary" to="/contact">
-              Book your first session <span className="arr">→</span>
+              Book your first session
             </Link>
             <Link className="btn btn-ghost" to="/services">
               Explore treatments
@@ -64,7 +63,7 @@ export default function Home() {
           {[...modalities, ...modalities].map((m, i) => (
             <span key={i}>
               {m}
-              <span />
+              {/* <span /> */}
             </span>
           ))}
         </div>
@@ -110,16 +109,16 @@ export default function Home() {
         <div className="wrap">
           <div className="head reveal">
             <span className="eyebrow">What we do</span>
-            <h2>Treatments designed around you</h2>
+            <h2>Our Services</h2>
             <p>
-              Six core services, combined into plans that match your goals from recovery to full body
+              Six services, combined into plans that match your goals from recovery to full body
               transformation.
             </p>
           </div>
           <ServicesCarousel />
           <div style={{ marginTop: "40px" }} className="reveal">
             <Link className="btn btn-ghost" to="/services">
-              See all services &amp; pricing <span className="arr">→</span>
+              See all services &amp; pricing
             </Link>
           </div>
         </div>
@@ -138,7 +137,7 @@ export default function Home() {
               </p>
               <div style={{ marginTop: "30px" }}>
                 <Link className="btn btn-primary" to="/contact">
-                  Claim this offer <span className="arr">→</span>
+                  Book Now
                 </Link>
               </div>
             </div>
@@ -186,7 +185,7 @@ export default function Home() {
             <p>Book your first session and let's build the plan that gets you there.</p>
             <div className="hero-actions" style={{ justifyContent: "center" }}>
               <Link className="btn btn-primary" to="/contact">
-                Book a session <span className="arr">→</span>
+                Book a session
               </Link>
               <Link className="btn btn-ghost" to="/about">
                 Meet the center
