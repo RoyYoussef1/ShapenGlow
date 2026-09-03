@@ -99,7 +99,6 @@ export default function About() {
           <div className="cta-band">
             <div className="b" aria-hidden="true" />
             <h2>Come see the space</h2>
-            <p>Book a visit, meet the team, and feel the difference for yourself.</p>
             <div className="hero-actions" style={{ justifyContent: "center" }}>
               <Link className="btn btn-primary" to="/contact">
                 Book a visit
