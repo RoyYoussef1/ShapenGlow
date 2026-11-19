@@ -4,6 +4,7 @@ import ServicesCarousel from "../components/ServicesCarousel";
 import CtaBand from "../components/CtaBand";
 import { StepIcon } from "../components/Icons";
 import { img } from "../data/images";
+import { faqs } from "../data/faq";
 
 const modalities = [
   "EMS Training",
@@ -67,7 +68,7 @@ export default function Home() {
 
           <div className="hero-visual">
             <figure className="media hv-main">
-              <img src={img.kettlebell.src} alt={img.kettlebell.alt} />
+              <img src={img.kettlebell.src} alt={img.kettlebell.alt} fetchpriority="high" />
             </figure>
             <figure className="media hv-inset">
               <img src={img.maderoLegs.src} alt={img.maderoLegs.alt} />
@@ -188,8 +189,29 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="sec theme-light" id="faq" aria-labelledby="faq-title">
+        <div className="wrap faq-wrap">
+          <div className="head reveal">
+            <span className="eyebrow">FAQ</span>
+            <h2 id="faq-title">Questions, answered</h2>
+            <p>Everything you need to know before your first visit.</p>
+          </div>
+          <div className="faq reveal">
+            {faqs.map((f, i) => (
+              <details key={f.q} open={i === 0}>
+                <summary>
+                  <h3>{f.q}</h3>
+                  <span className="faq-ic" aria-hidden="true" />
+                </summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CtaBand
-        theme="theme-white"
+        theme="theme-light"
         image={img.coach}
         eyebrow="Your first step"
         title="Ready to reset your body?"

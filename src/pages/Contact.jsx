@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { MAPS_URL, INSTAGRAM_URL } from "../data/services";
 import { img } from "../data/images";
@@ -28,6 +28,9 @@ export default function Contact() {
   const [attempted, setAttempted] = useState(false);
   const [sent, setSent] = useState(false);
   const [bookingLoaded, setBookingLoaded] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   const update = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
 
@@ -98,21 +101,23 @@ export default function Contact() {
                   <span>Loading availability…</span>
                 </div>
               )}
-              <iframe
-                src={BOOKING_URL}
-                title="Book an appointment with ShapenGlow"
-                width="100%"
-                height="800"
-                frameBorder="0"
-                scrolling="yes"
-                allow="web-share; payment"
-                onLoad={() => setBookingLoaded(true)}
-                style={{
-                  opacity: bookingLoaded ? 1 : 0,
-                  transition: "opacity 0.4s ease",
-                  display: "block",
-                }}
-              />
+              {mounted && (
+                <iframe
+                  src={BOOKING_URL}
+                  title="Book an appointment with ShapenGlow"
+                  width="100%"
+                  height="800"
+                  frameBorder="0"
+                  scrolling="yes"
+                  allow="web-share; payment"
+                  onLoad={() => setBookingLoaded(true)}
+                  style={{
+                    opacity: bookingLoaded ? 1 : 0,
+                    transition: "opacity 0.4s ease",
+                    display: "block",
+                  }}
+                />
+              )}
             </div>
           </div>
         </div>

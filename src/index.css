@@ -1409,6 +1409,68 @@ footer {
   scroll-margin-top: 80px;
 }
 
+.faq {
+  display: grid;
+  gap: 10px;
+}
+.faq details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0 20px;
+  transition: border-color 0.3s;
+}
+.faq details[open] {
+  border-color: var(--line-strong);
+}
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary h3 {
+  font-size: 1.08rem;
+}
+.faq-ic {
+  flex: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--ink-text);
+}
+.faq-ic::before,
+.faq-ic::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--teal-2);
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s var(--ease);
+}
+.faq-ic::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.faq details[open] .faq-ic::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.faq details p {
+  color: var(--muted);
+  padding: 0 0 20px;
+  max-width: 68ch;
+}
+
 @media (min-width: 640px) {
   .wrap {
     padding: 0 32px;
@@ -1713,6 +1775,18 @@ footer {
 
   .steps {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .faq-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .faq summary h3 {
+    font-size: 1.2rem;
+  }
+  .faq details {
+    padding: 0 26px;
   }
 
   .cta-img {

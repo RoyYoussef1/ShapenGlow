@@ -1,0 +1,13 @@
+{
+  "name": "Shape N Glow",
+  "short_name": "Shape N Glow",
+  "description": "Physiotherapy and wellness center in Lebanon.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061016",
+  "theme_color": "#061016",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
