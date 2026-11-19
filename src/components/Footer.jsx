@@ -11,9 +11,10 @@ export default function Footer() {
             <Link to="/" className="brand" style={{ marginBottom: "18px" }}>
               <img className="logo-badge" src={logo} alt="Shape N Glow logo" />
             </Link>
-            <p style={{ color: "var(--muted)" }}>
-              Your all-in-one destination for recovery &amp; beauty.
-            </p>
+            <p>Your all-in-one destination for recovery and beauty.</p>
+            <Link className="btn btn-primary" to="/contact">
+              Book a session
+            </Link>
           </div>
 
           <div>

@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import CursorGlow from "./components/CursorGlow";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -11,7 +10,6 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <>
-      <CursorGlow />
       <ScrollToTop />
       <Nav />
       <main>

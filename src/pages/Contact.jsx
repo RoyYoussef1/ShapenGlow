@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { MAPS_URL, INSTAGRAM_URL } from "../data/services";
+import { img } from "../data/images";
 
 const SERVICE_OPTIONS = [
   "EMS Training",
   "Maderotherapy",
   "Body Sculpting",
-  "Cellulite & Fat Reduction",
+  "Cellulite and Fat Reduction",
   "Pressotherapy",
   "Physical Therapy",
   "Other",
@@ -44,28 +45,39 @@ export default function Contact() {
   };
 
   return (
-    <div className="page active">
-      <section className="page-hero">
-        <div className="b" aria-hidden="true" />
-        <div className="wrap">
-          <span className="eyebrow">Get in touch</span>
-          <h1>
-            Let's start your
-            <br />
-            <span className="glow-word">glow</span> up.
-          </h1>
-          <p className="lead">Book a session or ask us anything.</p>
+    <div className="page">
+      <section className="page-hero theme-dark">
+        <div className="glowbg" aria-hidden="true" />
+        <div className="wrap page-hero-grid">
+          <div className="page-hero-copy">
+            <span className="eyebrow">Get in touch</span>
+            <h1>
+              Let's start your <span className="glow-word">glow</span> up.
+            </h1>
+            <p className="lead">Book a session or ask us anything.</p>
+            <div className="actions">
+              <a className="btn btn-primary" href="#book">
+                Book online <span className="arr">→</span>
+              </a>
+              <a className="btn btn-ghost" href="https://wa.me/96181588171" target="_blank" rel="noopener noreferrer">
+                WhatsApp us
+              </a>
+            </div>
+          </div>
+          <figure className="media">
+            <img src={img.maderoDark.src} alt={img.maderoDark.alt} />
+          </figure>
         </div>
       </section>
 
-      <section className="setmore-sec">
+      <section className="sec theme-light" id="book">
         <div className="wrap reveal">
           <div className="booking-card">
             <div className="booking-card-head">
               <div>
                 <span className="eyebrow">Skip the back-and-forth</span>
-                <h2 style={{ margin: "6px 0 4px" }}>Book your session instantly</h2>
-                <p className="lead" style={{ margin: 0 }}>
+                <h2>Book your session instantly</h2>
+                <p>
                   Pick a service, choose a time, done. Confirmed straight to your inbox.
                 </p>
               </div>
@@ -106,9 +118,11 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="section-pad" style={{ paddingTop: "30px" }}>
+      <section className="sec theme-dark">
         <div className="wrap contact-grid">
-          <div className="reveal">
+          <div className="form-card reveal">
+            <span className="eyebrow">Prefer a call back?</span>
+            <h2>Send us a request</h2>
             <form onSubmit={onSubmit} noValidate>
               <div className="field">
                 <label htmlFor="cf-name">Full name</label>
@@ -153,12 +167,16 @@ export default function Contact() {
                 Send request
               </button>
               <div className={`form-msg${sent ? " show" : ""}`}>
-                Thanks! Your request has been noted. We'll be in touch shortly to confirm your session. ✦
+                Thanks! Your request has been noted. We'll be in touch shortly to confirm your session.
               </div>
             </form>
           </div>
 
-          <div className="reveal">
+          <div className="contact-side reveal">
+            <figure className="media media-wide media-shade">
+              <img src={img.plank.src} alt={img.plank.alt} loading="lazy" />
+              <figcaption className="media-cap">Mon–Sat · by appointment</figcaption>
+            </figure>
             <div className="contact-cards">
               <div className="ccard">
                 <div className="ic">

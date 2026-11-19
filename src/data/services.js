@@ -19,7 +19,7 @@ export const services = [
   },
   {
     k: "cellulite",
-    t: "Cellulite & Fat Reduction",
+    t: "Cellulite and Fat Reduction",
     d: "Non-invasive treatments that target stubborn areas to reduce the appearance of cellulite and refine texture.",
     tags: ["Texture", "Refining"],
   },

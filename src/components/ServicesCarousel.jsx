@@ -60,9 +60,10 @@ export default function ServicesCarousel() {
   return (
     <>
       <div className="svc-grid" ref={trackRef}>
-        {items.map((s) => (
+        {items.map((s, i) => (
           <Link to="/services" className={`svc reveal${isMobile ? " in" : ""}`} key={s.k}>
             <div className="bloom" />
+            <span className="num">0{i + 1}</span>
             <ServiceIcon name={s.k} />
             <h3>{s.t}</h3>
             <p>{s.d}</p>
